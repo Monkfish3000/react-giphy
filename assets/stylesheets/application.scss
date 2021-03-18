@@ -17,7 +17,13 @@
     &:focus {
       box-shadow: none;
     }
+
   }
+
+#inputID::placeholder {
+    color: #121212;
+    opacity: 0.3;
+}
 
   &:before {
     content: '\F002';
@@ -48,6 +54,7 @@
   flex: 0 0 40%;
   background-color: #ecf0f1;
   overflow: scroll;
+  border-left: thick double #32a1ce;
 
   .gif-list {
     column-count: 2;
