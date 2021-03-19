@@ -14,7 +14,7 @@ class App extends Component {
 
     this.state = {
       gifs: [],
-      selectedGifId: "8qYg3KUxUlARUcNJeN"
+      selectedGifId: "emLwf07Myl4O4yoEVe"
     };
     this.search = this.search.bind(this);
     this.selectGif = this.selectGif.bind(this);
@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   search(query) {
-    const giphEndpoint = `https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${query}&limit=30`
+    const giphEndpoint = `https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${query}&limit=50`
     fetch(giphEndpoint).then(response => response.json()).then((data) => {
       const gifs = data.data.map(giph => giph.id)
       this.setState({
