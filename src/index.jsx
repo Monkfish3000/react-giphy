@@ -8,7 +8,6 @@ import App from './components/app.jsx';
 //   return <div>Hello, Michael</div>;
 // }
 
-
 const root = document.getElementById('root');
 if (root) {
   ReactDOM.render(
