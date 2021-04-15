@@ -1,4 +1,4 @@
-# react-boilerplate
+# react-giphy
 
 Simple react starter with the following config:
 
